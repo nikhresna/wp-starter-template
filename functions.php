@@ -21,12 +21,11 @@ add_action('init', 'register_menus');
 function register_menus() {
   register_nav_menus(array(
     'primary_menu' => 'Primary Menu',
-    'footer_menu' => 'Footer Menu',
-    'footer_links' => 'Footer Links',
-    'logout_menu' => 'Logout Links',
+    // 'footer_menu' => 'Footer Menu',
+    // 'footer_links' => 'Footer Links',
+    // 'logout_menu' => 'Logout Links',
   ));
 }
-
 
 // remove default dimension wp generates
 add_filter('post_thumbnail_html', 'remove_thumbnail_dimensions', 10, 3);
